@@ -61,63 +61,60 @@
 }
 .meta-rapida-curso {
   display: grid;  
-  grid-template-columns: repeat(4, 1fr); /* Mantém os 4 lado a lado */
-  gap: 1.5rem; /* Aumenta o espaçamento horizontal entre eles */
-  background-color: #eef7f6; /* Um verde bem mais suave e moderno (pastel) */
-  padding: 1.5rem 1.2rem; /* Mais respiro interno (principalmente nas laterais) */
-  border-radius: 12px; /* Cantos arredondados combinando com a foto ao lado */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1.5rem; 
+  background-color: #eef7f6; 
+  padding: 1.5rem 1.2rem; 
+  border-radius: 12px; 
   width: 100%;             
   box-sizing: border-box;  
   margin-top: 2rem;      
-  align-items: center; /* Alinha todos verticalmente por igual */
+  align-items: center; 
 }
 
 .meta-item {
   display: flex;
-  align-items: center; /* Alinha o ícone e o texto na mesma linha horizontal */
-  gap: 0.75rem; /* Espaço perfeito entre o ícone e o texto */
+  align-items: center; 
+  gap: 0.75rem; 
   position: relative;
 }
 
-/* Criando divisórias verticais discretas usando a cor do seu próprio site */
 .meta-item:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: -0.75rem; /* Centraliza a linha no vão do gap */
+  right: -0.75rem; 
   top: 15%;
   height: 70%;
   width: 1px;
-  background-color: #cce4e1; /* Cor da linha divisória sutil */
+  background-color: #cce4e1;
 }
 
-/* Ajustando os ícones para que fiquem padronizados e organizados */
 .meta-item img.meta-icone {
   width: 26px;
   height: 26px;
   object-fit: contain;
-  opacity: 0.8; /* Suaviza os ícones para conversarem melhor com o texto */
+  opacity: 0.8;
 }
 
-/* Organização dos textos internos */
 .meta-item div {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem; /* Espacinho vertical mínimo entre o título e o valor */
+  gap: 0.15rem; 
 }
 
 .meta-item strong {
   font-size: 0.85rem;
-  color: #091d34; /* Azul escuro idêntico ao do seu menu superior */
+  color: #091d34; 
   font-weight: 700;
-  white-space: nowrap; /* Impede que palavras como "Carga horária" quebrem linha feio */
+  white-space: nowrap;
 }
 
 .meta-item p {
   margin: 0;
   font-size: 0.85rem;
-  color: #52647a; /* Cinza azulado suave */
+  color: #52647a; 
 }
-/* Banner */
+
 .banner-curso-container {
   margin: 0;
   width: 100%;
@@ -129,11 +126,11 @@
   object-fit: cover;
 }
 .visual-imagem {
-  width: 45%;             /* Faz a imagem ocupar toda a largura do espaço reservado para ela */
-  max-width: 600px;        /* Evita que ela fique gigante em telas muito grandes (ajuste esse valor se necessário) */
-  height: auto;            /* Mantém a proporção original, evitando que o garoto fique "esticado" ou "achatado" */
-  border-radius: 0.75rem;  /* Arredonda as bordas para combinar com o restante do seu layout */
-  object-fit: cover;       /* Garante que a imagem preencha o espaço elegantemente caso você defina uma altura fixa */
+  width: 45%;            
+  max-width: 600px;        
+  height: auto;            
+  border-radius: 0.75rem;  
+  object-fit: cover;      
 }
 
 /* Seções Internas */
@@ -144,7 +141,6 @@
   font-weight: 700;
 }
 
-/* O que você vai aprender (Grid) */
 .grid-aprendizado {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -161,7 +157,7 @@
   gap: 10px;
 }
 .icone-aprendizado-wrapper {
-  background-color: #e0f2f1; /* Círculo verde suave */
+  background-color: #e0f2f1; 
   color: #00a896;
   width: 35%;
   height: 40%;
@@ -177,20 +173,19 @@
   line-height: 1.4;
 }
 
-/* Linha do Tempo dos Módulos */
 .lista-modulos.linha-conectora {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-/* Linha vertical por trás das bolinhas */
+
 .lista-modulos.linha-conectora::before {
   content: "";
   position: absolute;
   top: 20px;
   bottom: 20px;
-  left: 17px; /* Alinhamento centralizado com os 34px da bolinha */
+  left: 17px; 
   width: 2px;
   background-color: #00a896;
   z-index: 1;
@@ -237,7 +232,6 @@
   padding: 12px 20px;
 }
 
-/* Instrutor e Stats Integrados */
 .instrutor-e-stats-container {
   display: flex;
   justify-content: space-between;
@@ -313,15 +307,15 @@
   padding-bottom: 0.5rem; 
   border-bottom: 1px solid rgba(226, 232, 240, 0.1);
 }
-/* ==========================================================================
-   FORMULÁRIO DE MATRÍCULA
-   ========================================================================== */
+
+/*FORMULÁRIO DE MATRÍCULA*/
+
 .card-formulario-matricula {
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 1.5rem;
-  margin-bottom: 1.5rem; /* Margem para separar da tabela de turmas abaixo */
+  margin-bottom: 1.5rem;
 }
 
 .titulo-lateral-form {
@@ -389,7 +383,6 @@
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* Validações Visuais Nativas do CSS */
 .campo-grupo input:focus-visible {
   outline: none;
   border-color: #00a3b4;
@@ -440,9 +433,6 @@
   margin-top: 0.8rem;
 }
 
-/* ==========================================================================
-   TABELA SEMÂNTICA
-   ========================================================================== */
 .card-turmas {
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -464,7 +454,6 @@
   text-align: left;
 }
 
-/* Oculta o caption visualmente mantendo a acessibilidade */
 .tabela-turmas caption {
   position: absolute;
   width: 1px;
@@ -517,9 +506,8 @@
 }
 
 
-/* ==========================================================================
-   RESPONSIVIDADE (Ajustes de Grid)
-   ========================================================================== */
+/*RESPONSIVIDADE*/
+
 @media (max-width: 900px) {
   .meta-rapida-curso {
     grid-template-columns: repeat(2, 1fr);
@@ -551,7 +539,6 @@
     width: 100%;
   }
 }
-/* Responsividade: Volta a empilhar um embaixo do outro no celular */
 @media (max-width: 768px) {
   .topo-conteudo {
     flex-direction: column;

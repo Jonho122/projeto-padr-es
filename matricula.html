@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos de Interfaces Web - Trilhas do Saber</title>
-    <!-- Vincula ao mesmo arquivo CSS unificado do projeto -->
     <link rel="stylesheet" href="./css/matricula.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/cursos.css">
@@ -27,11 +26,10 @@
     </header>
 
     <main class="container-matricula">
-        <!-- Breadcrumb unificado com o padrão do cursos.html -->
         <div class="breadcrumb-container">
             <nav class="breadcrumb" aria-label="Caminho da página">
                 <a href="index.html" class="link-casa">
-                    <img src="./imagens/casa.png" alt="Início" class="img-casa" />
+                <img src="./imagens/casa.png" alt="Início" class="img-casa" />
                 </a>
                 <span class="separador">/</span>
                 <a href="cursos.html">Explorar cursos</a>
@@ -40,15 +38,10 @@
             </nav>
         </div>
 
-        <!-- Layout de duas colunas principal -->
         <div class="layout-catalogo">
-            
-            <!-- COLUNA DA ESQUERDA (Conteúdo Principal do Curso) -->
             <div class="coluna-conteudo-curso">
-
                 <section class="topo-catalogo topo-home">
                     <div class="topo-conteudo">
-                        <!-- Coluna da Esquerda -->
                         <div class="texto-topo">
                             <div>
                             <span class="categoria-curso">DESIGN E DESENVOLVIMENTO</span>
@@ -92,7 +85,7 @@
                         
                     </div>
                 </section>
-                <!-- O que você vai aprender -->
+                
                 <section class="topicos-aprendizado">
                     <h2 class="subtitulo-detalhe">O que você vai aprender</h2>
                     <div class="grid-aprendizado">
@@ -115,7 +108,6 @@
                     </div>
                 </section>
 
-                <!-- Módulos (Acordeão) -->
                 <section class="modulos-curso">
                     <h2 class="subtitulo-detalhe">Módulos</h2>
                     <div class="lista-modulos linha-conectora">
@@ -157,7 +149,6 @@
                     </div>
                 </section>
 
-                <!-- Área do Instrutor e Estatísticas Integradas (Unificados em um único Card) -->
                 <section class="instrutor-e-stats-container">
                     <div class="perfil-instrutor">
                         <img src="./imagens/image3.png" alt="Foto de Lucas Andrade, instrutor do curso" class="foto-instrutor" loading="lazy">
@@ -191,13 +182,9 @@
                         </div>
                     </div>
                 </section>
-
-            </div> <!-- Fim da coluna-conteudo-curso -->
-
-            <!-- COLUNA DA DIREITA (Matrícula + Turmas Disponíveis) -->
+            </div>
+            
             <aside class="barra-lateral">
-                
-                <!-- Card de Matrícula (Formulário Completo) -->
                 <div class="card-formulario-matricula">
                     <h2 class="titulo-lateral-form">Matricule-se</h2>
                     
@@ -239,7 +226,7 @@
                     </form>
                 </div>
 
-                <!-- Tabela Semântica de Turmas -->
+                
                 <div class="card-turmas">
                     <h3 class="titulo-lateral-tabela">Turmas disponíveis</h3>
                     
@@ -294,7 +281,7 @@
 
             </aside>
 
-        </div> <!-- Fim do layout-catalogo -->
+        </div> 
     </main>
 
     <footer class="footer-principal">

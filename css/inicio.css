@@ -1,14 +1,10 @@
-/* ==========================================================================
-   ELEMENTOS EXCLUSIVOS DA PÁGINA DE INÍCIO (HOME) - CORRIGIDO
-   ========================================================================== */
 
-/* 1. Modificações na seção topo do catálogo para agir como Hero Banner */
 .hero-home {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding: 3rem 0;
+
 }
 
 .hero-conteudo {
@@ -55,7 +51,6 @@
   height: auto;
 }
 
-/* 2. Grade com 6 Trilhas (Horizontal) */
 .titulo-sessao {
   font-size: 1.5rem;
   font-weight: 700;
@@ -78,17 +73,16 @@
   gap: 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
-/* No bloco da home no CSS, apenas limpe o .icone-home e garanta isso para os novos cards: */
 .card-trilha-grade {
   padding: 1.2rem;
   border-radius: 0.5rem;
   display: flex;
-  flex-direction: column; /* Faz o ícone ficar acima do texto */
+  flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
-/* Cores pastéis harmônicas para os fundos */
+
 .cor-tech { background-color: #ecfeff; }
 .cor-gestao { background-color: #eef2ff; }
 .cor-marketing { background-color: #fffbeb; }
@@ -109,12 +103,8 @@
   line-height: 1.4;
 }
 
-/* Ajuste fino para a grid da home alinhar com a lateral */
-.layout-home {
-  align-items: min-content;
-}
 
-/* Margem inferior para os cards de curso não colarem no botão de ver todos */
+
 .layout-home .grid-cursos {
   margin-bottom: 0.5rem;
 }
@@ -126,9 +116,7 @@
   font-weight: 600;
 }
 
-/* ==========================================================================
-   LINHA DE PROGRESSO (MENU LATERAL)
-   ========================================================================== */
+/*LINHA DE PROGRESSO*/
 
 .bloco-progresso {
   background-color: #f8fafc;
@@ -145,7 +133,7 @@
 }
 
 .lista-progresso-home {
-  list-style: none; /* Remove os números normais da lista */
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
@@ -154,29 +142,26 @@
   position: relative;
 }
 
-/* A Linha Vertical Conectora (Fundo) */
 .lista-progresso-home::before {
   content: "";
   position: absolute;
-  left: 11px; /* Centraliza a linha exatamente atrás das bolinhas */
+  left: 11px; 
   top: 5px;
   bottom: 5px;
   width: 2px;
-  background-color: #e2e8f0; /* Cor da linha conectora */
+  background-color: #e2e8f0; 
   z-index: 1;
 }
 
-/* Estrutura de cada item da lista */
 .lista-progresso-home li {
   position: relative;
-  padding-left: 2.5rem; /* Abre espaço para a bolinha na esquerda */
+  padding-left: 2.5rem; 
   font-size: 0.85rem;
-  z-index: 2; /* Garante que os textos e bolinhas fiquem por cima da linha */
+  z-index: 2; 
 }
 
-/* O Círculo Indicador (Padrão / Não Concluído) */
 .lista-progresso-home li::before {
-  content: ""; /* Fica vazio por padrão */
+  content: ""; 
   position: absolute;
   left: 0;
   top: 2px;
@@ -184,7 +169,7 @@
   height: 24px;
   border-radius: 50%;
   background-color: #ffffff;
-  border: 2px solid #cbd5e1; /* Borda cinza para o que falta fazer */
+  border: 2px solid #cbd5e1; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,15 +179,13 @@
   box-sizing: border-box;
 }
 
-/* Customização para os itens Concluídos (.passo-feito) */
 .lista-progresso-home li.passo-feito::before {
-  content: "✓"; /* Adiciona o ícone de confirmação */
-  background-color: #00a3b4; /* Cor de fundo ativa (mesmo azul do site) */
+  content: "✓"; 
+  background-color: #00a3b4; 
   border-color: #00a3b4;
-  color: #ffffff; /* Cor do check branco */
+  color: #ffffff; 
 }
 
-/* Textos internos */
 .lista-progresso-home li strong {
   display: block;
   color: #334155;
@@ -216,7 +199,6 @@
   line-height: 1.4;
 }
 
-/* Bloco de Chamada Amarelo */
 .card-jornada-home-aviso {
   background-color: #fecb2f;
   border-radius: 0.5rem;
@@ -251,9 +233,7 @@
   border-radius: 0.25rem;
 }
 
-/* ==========================================================================
-   SEÇÃO DE DEPOIMENTOS (HOME) - ESTILO LIMPO LADO A LADO
-   ========================================================================== */
+/*SEÇÃO DE DEPOIMENTOS*/
 
 .depoimentos-section {
   width: 100%;
@@ -266,46 +246,43 @@
   flex-direction: column;
 }
 
-/* 2. Força o grid a dividir o espaço em 4 colunas perfeitamente iguais */
+
 .grid-depoimentos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Divide o espaço horizontal em 4 partes idênticas */
-  gap: 1.5rem; /* Espaço uniforme entre cada depoimento */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1.5rem; 
   width: 100%;
   margin-top: 1rem;
   box-sizing: border-box;
 }
 
-/* 3. Ajusta o card para que a foto fique no topo/esquerda e o bloco de conteúdo flua bem */
 .card-depoimento {
   display: flex;
-  flex-direction: row; /* Foto na esquerda, conteúdo na direita */
+  flex-direction: row; 
   align-items: flex-start;
   gap: 0.8rem;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* 4. Garante que a foto do estudante não seja esmagada */
 .foto-estudante {
   width: 45px !important;
   height: 45px !important;
   border-radius: 50%;
   object-fit: cover;
-  flex-shrink: 0; /* Impede que a foto vire um "ovo" ou suma */
+  flex-shrink: 0; 
 }
 
 .depoimento-conteudo {
   display: flex;
-  flex-direction: column; /* Empilha: Texto -> Nome -> Profissão */
+  flex-direction: column; 
   align-items: flex-start;
   text-align: left;
-  gap: 0.3rem; /* Espaçamento sutil entre cada linha */
-  flex: 1; /* Ocupa todo o resto da largura do card */
-  min-width: 0; /* Evita que o texto estoure o limite do container */
+  gap: 0.3rem; 
+  flex: 1; 
+  min-width: 0; 
 }
 
-/* Estilo do texto do depoimento */
 .depoimento-conteudo p {
   font-size: 0.8rem;
   line-height: 1.4;
@@ -313,7 +290,6 @@
   margin: 0;
 }
 
-/* Estilo do Nome do Estudante (agora embaixo do texto) */
 .depoimento-conteudo strong {
   font-size: 0.85rem;
   color: #1e293b;
@@ -322,14 +298,12 @@
   margin-top: 0.3rem;
 }
 
-/* Estilo da Profissão (abaixo do nome) */
 .depoimento-conteudo span {
   font-size: 0.75rem;
   color: #64748b;
   display: block;
 }
 
-/* Alinha os pontinhos de paginação no centro do container */
 .depoimentos-paginacao {
   display: flex;
   justify-content: center;
@@ -348,9 +322,8 @@
 }
 
 .depoimentos-paginacao .ponto.ativo {
-  background-color: #00a3b4; /* Cor verde/azul do seu site */
+  background-color: #00a3b4; 
 }
-/* Responsividade: Em tablets e celulares, os cards quebram em menos colunas para não amassar */
 @media (max-width: 1024px) {
   .grid-depoimentos {
     grid-template-columns: repeat(2, 1fr);
